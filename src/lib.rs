@@ -226,7 +226,7 @@ mod test{
         );
 
         // Send transactio withe increment insturction
-        let mut instruction = Transaction::new_with_payer(&[increment_instruction], Some(&payer.pubkey()));
+        let mut transaction = Transaction::new_with_payer(&[increment_instruction], Some(&payer.pubkey()));
         transaction.sign(&[&payer, &counter_keypair], recent_blockhash);
         banks_client.process_transaction(transaction).await.unwrap();
 

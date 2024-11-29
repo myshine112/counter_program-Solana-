@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "solana-bankrun": "^0.4.0"
+  }
+}
